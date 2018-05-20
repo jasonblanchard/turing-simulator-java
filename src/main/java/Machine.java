@@ -28,7 +28,6 @@ public class Machine {
 	}
 	
 	void execute(Map<String, Instruction> instructions) {
-		System.out.println(instructions);
 		for (int i = 0; i < tapeLimit; i++) {
 			this.logState();
 			String instructionKey = String.format("%s_%s", this.state, this.tape.get(this.head));
